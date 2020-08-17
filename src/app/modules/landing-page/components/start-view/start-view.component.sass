@@ -1,0 +1,68 @@
+$header-color: #ffffff
+$text-color: #A599E9
+$dark-text-color: #434170
+$button-text-color: #ffffff
+
+$button-background-color: #2D2B55
+$button-shadow-color: #222243
+
+$main-max-width: 450px
+
+$section-text-vertical-margin: 100px
+$header-text-size: 24px
+$paragraph-text-size: 18px
+$button-text-size: 18px
+$button-icon-size: 16px
+$button-icon-margin: 20px
+
+$button-min-width: 280px
+$button-vertical-padding: 10px
+$button-horizontal-padding: 20px
+
+$icon-width: 100px
+$icon-height: $icon-width
+    
+.component-main
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: $main-max-width
+
+    .section-icon
+
+        img
+            width: $icon-width
+            height: $icon-height
+    
+    .section-text
+        margin: $section-text-vertical-margin 0
+
+        h3
+            text-align: center
+            font-size: $header-text-size
+            color: $header-color
+
+        p
+            text-align: center
+            font-size: $paragraph-text-size
+            color: $text-color
+
+    .section-start
+
+        button
+            font-size: $paragraph-text-size
+            color: $button-text-color
+            background-color: $button-background-color
+            min-width: $button-min-width
+            padding: $button-vertical-padding $button-horizontal-padding
+            box-shadow: 0 3px 6px $button-shadow-color
+
+            img
+                width: $button-icon-size
+                height: $button-icon-size
+                color: $button-text-color
+                margin-left: $button-icon-margin
+
+        p
+            color: $dark-text-color
+            text-align: center
