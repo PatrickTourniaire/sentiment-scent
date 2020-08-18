@@ -1,0 +1,55 @@
+$component-background-color: #2D2B55
+    
+$header-color: #ffffff
+$text-color: #A599E9
+$dark-text-color: #434170
+$button-text-color: #ffffff
+
+$button-background-color: #2D2B55
+$button-shadow-color: #222243
+
+$toolbar-sep-color: #252547
+
+$card-boarder-radius: 20px
+
+$toolbar-height: 70px
+$toolbar-side-padding: 20px
+
+$action-buttons-padding: 20px
+$action-button-sizes: 24px
+$action-button-side-margin: 10px
+
+.component-main
+    background-color: $component-background-color
+    box-shadow: 0 3px 6px $button-shadow-color
+    border-radius: $card-boarder-radius
+    width: 90vw
+    height: 90vh
+
+    .section-toolbar
+        width: 100%
+        display: inline-flex
+        height: $toolbar-height
+        padding: 0 $toolbar-side-padding
+
+        .action-buttons
+            height: 100%
+            width: auto
+            border-right: 2px solid $toolbar-sep-color
+            padding-right: $action-buttons-padding
+            display: flex
+            align-items: center
+
+            button
+                width: $action-button-sizes
+                height: $action-button-sizes
+                padding: 0
+                background: transparent
+                border: none
+                margin: 0 $action-button-side-margin
+
+                img
+                    width: 100%
+                    height: 100%
+                    margin: 0
+

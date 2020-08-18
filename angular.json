@@ -126,5 +126,8 @@
       }
     }
   },
-  "defaultProject": "sentiment-scent"
+  "defaultProject": "sentiment-scent",
+  "cli": {
+    "analytics": "3dbef783-6e1f-4894-8bf6-62f8a3d83957"
+  }
 }

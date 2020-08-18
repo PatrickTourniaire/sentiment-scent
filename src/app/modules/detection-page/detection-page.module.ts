@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DetectionViewComponent } from './detection-view/detection-view.component';
+import { DetectionViewComponent } from './components/detection-view/detection-view.component';
 import { Routes, RouterModule } from '@angular/router';
+import {MatSelectModule} from '@angular/material/select';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 const routes: Routes = [
   { 
@@ -14,7 +16,10 @@ const routes: Routes = [
   declarations: [DetectionViewComponent],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    MatSelectModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [RouterModule]
 })
