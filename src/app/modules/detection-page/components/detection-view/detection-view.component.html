@@ -16,11 +16,19 @@
         </div>
 
         <div class="model-options">
-            <mat-form-field appearance="fill">
+            <mat-form-field>
                 <mat-label>Detection Model</mat-label>
                 <mat-select>
-                    <mat-option value="option1">Resnet 50</mat-option>
-                    <mat-option value="option2" disabled>Fast R-CNN</mat-option>
+                    <mat-option value="resnet-50" selected>Resnet 50</mat-option>
+                    <mat-option value="fast-rcnn">Fast R-CNN</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Loss Function</mat-label>
+                <mat-select required>
+                    <mat-option value="categorical-crossentropy">Categorical Crossentropy</mat-option>
+                    <mat-option value="binary-crossentropy">Binary Crossentropy</mat-option>
                 </mat-select>
             </mat-form-field>
         </div>
